@@ -1,0 +1,47 @@
+#header {
+    height: 125px;
+    /*width: 100vw;*/
+    background-color: black;
+    display: flex;
+    padding: 0 32px;
+}
+
+.header-link {
+    color: white;
+    font-size: 14px;
+    margin-right: 50px;
+}
+
+.header-quote {
+    color: #FAFAFA;
+    font-size: 12px;
+    padding-right: 100px;
+    padding-top: 30px;
+    font-style: italic;
+    margin-left: 16px;
+}
+
+.header-logo {
+    width: 110px;
+}
+
+.header-links {
+    padding-top: 30px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+    height: 300px;
+}
+
+#info-form {
+    width: 200px;
+}
+
+.form-fields {
+    margin-top: 16px;
+}
