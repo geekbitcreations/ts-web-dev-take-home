@@ -20,8 +20,7 @@ var ninput = document.getElementById("name").value;
 
   function displayInfo() 
   {
-      document.getElementById("einput").value = email;
-      document.getElementById("ninput").value = name;
-    alert(value);
+      document.getElementById("email").value = einput;
+      document.getElementById("name").value = ninput;
+    alert("Email: ${einput}\nName: ${ninput}");
   }
-  
