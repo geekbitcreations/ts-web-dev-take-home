@@ -1,47 +1,160 @@
 #header {
-    height: 125px;
-    /*width: 100vw;*/
-    background-color: black;
-    display: flex;
-    padding: 0 32px;
+  height: 125px;
+  /*width: 100vw;*/
+  background-color: black;
+  display: flex;
+  padding: 0 32px;
 }
 
 .header-link {
-    color: white;
-    font-size: 14px;
-    margin-right: 50px;
+  color: white;
+  font-size: 14px;
+  margin-right: 50px;
+  display: inline-block;
 }
 
 .header-quote {
-    color: #FAFAFA;
-    font-size: 12px;
-    padding-right: 100px;
-    padding-top: 30px;
-    font-style: italic;
-    margin-left: 16px;
+  color: #fafafa;
+  font-size: 12px;
+  padding-right: 100px;
+  padding-top: 30px;
+  font-style: italic;
+  margin-left: 10px;
+  margin-top: 20px;
 }
 
 .header-logo {
-    width: 110px;
+  width: 110px;
+}
+
+.header-mobile-logo {
+  display: none;
+}
+
+img {
+  width: 95px;
+  margin-top: 45px;
 }
 
 .header-links {
-    padding-top: 30px;
+  padding-top: 30px;
+  margin-top: 15px;
+  margin-left: 60%;
 }
 
 body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 #container {
-    height: 300px;
+  height: 300px;
+}
+
+.form-container {
+  margin-top: 80px;
+  display: block;
+  margin-left: 45%;
 }
 
 #info-form {
-    width: 200px;
+  width: 200px;
+}
+
+label {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#submitBtn {
+  width: 185px;
+  height: 25px;
+  font-size: 12px;
+  padding-bottom: 5px;
 }
 
 .form-fields {
-    margin-top: 16px;
+  margin-top: 50px;
+}
+
+/* Media query for tablet design. */
+@media (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
+
+  #header {
+    height: 75px;
+  }
+
+  .header-link {
+    display: none;
+  }
+
+  .header-quote {
+    display: none;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-mobile-logo {
+    width: 80px;
+    display: block;
+  }
+
+  img {
+    width: 30px;
+    margin-top: 15px;
+  }
+
+  .form-container {
+    margin-top: 80px;
+    display: block;
+    margin-left: 70%;
+    font-weight: normal;
+  }
+}
+
+/* Media query for mobile design. */
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    height: 50%;
+  }
+
+  #header {
+    height: 75px;
+  }
+
+  .header-link {
+    display: none;
+  }
+
+  .header-quote {
+    display: none;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-mobile-logo {
+    width: 80px;
+    display: block;
+  }
+
+  img {
+    width: 30px;
+    margin-top: 15px;
+  }
+
+  .form-container {
+    margin-top: 80px;
+    display: block;
+    margin-left: 20%;
+    font-weight: normal;
+  }
 }

@@ -13,7 +13,9 @@
     <meta property="og:image" content="">
 
     <link rel="stylesheet" href="./css/main.css">
+    <script type="text/javascript" src="./js/main.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -21,6 +23,9 @@
 <div id="header">
     <div class="header-logo">
         <img src="./img/logo-large.png"/>
+    </div>
+    <div class="header-mobile-logo">
+        <img src="./img/logo-small.png"/>
     </div>
     <div class="header-quote">
         "Follow the signals, not the cents."
@@ -38,14 +43,14 @@
     <div class="form-container">
         <form action="" id="info-form">
             <label for="email">Email</label>
-            <input type="text" id="email" name="email">
+            <input type="text" id="email" name="email" required>
             <label for="name">Name</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" required>
             <div id="robot-check">
+                <input type="checkbox" id="checkbox" name="checkbox">
                 <label for="name">I am not a robot</label>
             </div>
-            <input type="checkbox" id="checkbox" name="checkbox">
-            <input type="submit" value="Submit">
+            <input type="submit" id="submitBtn" value="Submit" onclick="validateForm()">
         </form>
     </div>
 </div>
